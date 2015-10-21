@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width= 1" />
+    <link href="./css/moonMap.css" type="text/css" rel="stylesheet" />
+    <script src="./js/moonMap.js"></script>
+
+    <title>Harry McKinney</title>
+
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        .container {
+            width: 100%;
+            height: 700px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="center" class="orbit-center">
+        <span>Center</span>
+    </div>
+    <span class="moonSelector">1</span>
+    <span class="moonSelector">2</span>
+    <span class="moonSelector">3</span>
+    <span class="moonSelector">4</span>
+    <span class="moonSelector">5</span>
+    <span class="moonSelector">6</span>
+    <span class="moonSelector">7</span>
+    <span class="moonSelector">8</span>
+    <span class="moonSelector">9</span>
+    <span class="moonSelector">10</span>
+    <script>
+        var map = new MoonMap('#center', {
+            moonSelector: '.moonSelector',
+            radius: 140
+        });
+    </script>
+
+    </div>
+    <!--end container class-->
+
+    <script>
+        var map = new MoonMap('#center', {
+            active: function(orbit) {
+
+                var active = orbit.currentlyActive,
+                    activeMoon = orbit.moons[active];
+
+                // Do something with the active moon
+                console.log('New moon is active');
+
+            },
+            activeClass: 'active',
+            moonSelector: '.moonSelector',
+            radius: 140
+        });
+
+        map.startCarousel(1200); // change moons every 1200 ms
+    </script>
+
+</body>
+
+</html>
