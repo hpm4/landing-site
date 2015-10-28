@@ -14,6 +14,9 @@
             background-color: #ccc;
         }
         .container {
+            margin-top:100px;
+            margin-left:auto;
+            margin-right:auto;
             width: 100%;
             height: 700px;
             border: 1px solid #000;
@@ -35,6 +38,8 @@
 </head>
 
 <body>
+    
+    <div class="container">
 
     <div id="center" class="orbit-center">
         <span>Center</span>
@@ -57,7 +62,6 @@
     </script>
 
     </div>
-    <!--end container class-->
 
     <script>
         var map = new MoonMap('#center', {
@@ -72,13 +76,16 @@
             },
             activeClass: 'active',
             moonSelector: '.moonSelector',
-            radius: 140
+            radius: 240
         });
 
         map.startCarousel(1200); // change moons every 1200 ms
     </script>
     <div class="copyright" style="margin:0 auto; border:1px solid #000; height:150px; width:520px; text-align:center;">Copyright &copy; 1999 - <script>document.write(new Date().getFullYear())</script> Company Name, site &Delta; 's by: WebDesigner </div>
        </div>
+       
+       </div>
+    <!--end container class-->
 </body>
 
 </html>
