@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+
+    <style>
+        .container {
+            width: 1100px;
+            height: 1440px;
+            margin: 0 auto;
+        }
+        .top-space {
+            width: 90%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .top-lower {
+            width: 90%;
+            height: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .top-middle {
+            height: 27%;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .border {
+            height: 100%;
+            width: 40%;
+            border: 1px solid #000;
+            margin-left: 10%;
+            display: inline-block;
+        }
+        .border-left {
+            height: 40%;
+            width: 20%;
+            border: 1px solid #000;
+            float: left;
+            display: inline-block;
+            margin-top: 10%;
+        }
+        .border-right {
+            height: 40%;
+            width: 20%;
+            border: 1px solid #000;
+            float: right;
+            display: inline-block;
+            margin-top: 10%;
+        }
+        /**start circle divs**/
+
+        .one {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all .2s ease-in-out;
+        }
+        .one:hover,
+        .two:hover,
+        .two-half:hover,
+        .three:hover,
+        .three-half:hover,
+        .four:hover,
+        .four-half:hover,
+        .five:hover,
+        .five-half:hover,
+        .six:hover {
+            transform: scale(1.1);
+        }
+        .six {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all .2s ease-in-out;
+        }
+        .two {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 27%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .two-half {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 15%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .five {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 27%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .five-half {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 15%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .three {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 13%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .three-half {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 43%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .four {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 13%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+        .four-half {
+            height: 100%;
+            width: 15%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-left: 43%;
+            display: inline-block;
+            transition: all .2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="top-space">
+            <div class="one"></div>
+        </div>
+        <div class="top-space">
+            <div class="two"></div>
+            <div class="two-half"></div>
+        </div>
+        <div class="top-space">
+            <div class="three"></div>
+            <div class="three-half"></div>
+        </div>
+
+        <div class="top-middle">
+            <div class="border-left"></div>
+            <div class="border"></div>
+            <div class="border-right"></div>
+        </div>
+
+        <div class="top-lower">
+            <div class="four"></div>
+            <div class="four-half"></div>
+        </div>
+        <div class="top-lower">
+            <div class="five"></div>
+            <div class="five-half"></div>
+        </div>
+        <div class="top-lower">
+            <div class="six"></div>
+        </div>
+
+    </div>
+    <!--end container class-->
+</body>
+
+</html>
